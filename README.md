@@ -10,7 +10,7 @@ In this repo I hope to have some code for (haven't written a single line of code
 
 For this, need these components:
 
-1. Some code that can transliterate between Indic/Brahmic scripts and a few common Latin scripts, e.g. Bengali to Gurmukhi, Devanagari to Kannada, Tamil to ISO 15919, etc. (I think [sanscript.js](https://github.com/sanskrit/sanscript.js) already does this, or I can use [my script](http://shreevatsa.appspot.com/sanskrit/transliterate.html) from pre-2010.)
+1. Some code that can transliterate between Indic/Brahmic scripts and a few common Latin scripts, e.g. Bengali to Gurmukhi, Devanagari to Kannada, Tamil to ISO 15919, etc.
 2. Some code that can scan through the text elements on a webpage and detect runs of Brahmic text (and which alphabet they are in). (I am planning to look at the MathJax preprocessors documentation for how they do this.)
 3. Some code to save user preferences in localstorage, and the associated CSS and JS stuff to make it sit as an unobtrusive button in a corner of the page, when clicked pop a box asking for the user's preferred scripts, etc. (This probably exists already.)
 

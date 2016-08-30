@@ -1,0 +1,15 @@
+#+TITLE: This
+
+* Planning
+
+* Transliteration
+
+Code already exists:
+
+- [[http://shreevatsa.appspot.com/sanskrit/transliterate.html][my script]] from 2010 or earlier
+- [[sanscript.js][https://github.com/sanskrit/sanscript.js]]
+- [[https://github.com/mbykov/salita][salita]]
+
+* Chrome extension
+
+Reading https://developer.chrome.com/extensions now.
