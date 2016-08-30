@@ -8,7 +8,9 @@ In this repo I hope to have some code for (haven't written a single line of code
 1. A browser extension that users can install, which will let them read, on any webpage, text detected as Indic (or marked up as such) transliterated into the script of their choice.
 2. A Javascript library (like MathJax, or translipi) such that any website developer can, by simply adding a single line on their page, make the contents available to readers in whatever script they prefer (as if they had installed the extension).
 
-For this, need these components:
+I wish these existed already so that I didn't have to write this. If you want to work on the above please do.
+
+Meanwhile, if I need to write this myself, need these components:
 
 1. Some code that can transliterate between Indic/Brahmic scripts and a few common Latin scripts, e.g. Bengali to Gurmukhi, Devanagari to Kannada, Tamil to ISO 15919, etc.
 2. Some code that can scan through the text elements on a webpage and detect runs of Brahmic text (and which alphabet they are in). (I am planning to look at the MathJax preprocessors documentation for how they do this.)
