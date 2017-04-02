@@ -13,3 +13,22 @@ Code already exists:
 * Chrome extension
 
 Reading https://developer.chrome.com/extensions now.
+
+Looks like we just need to [[https://developer.chrome.com/extensions/contextMenus][add a context menu]] and then we can execute arbitrary JS code in the ~onClicked~ callback, with the reference to the ~selectionText~.
+
+
+See also google search results:
+https://stackoverflow.com/questions/12424631/get-selected-text-in-a-chrome-extension
+https://stackoverflow.com/questions/19414751/chrome-extension-determining-selection-text-or-page-in-context-menu
+https://tomoprogramming.blogspot.com/2013/08/simple-tutorial-for-chrome-extension.html
+https://stackoverflow.com/questions/4376167/text-selection-and-display-in-context-menu-chrome-extension
+
+The problem is replacement, as the selected text can span multiple divs in different styles.
+
+It also looks like we need a [[https://developer.chrome.com/extensions/overview#contentScripts][content script]].
+
+But note that [[https://developer.chrome.com/extensions/content_scripts][content scripts]] cannot directly call the Chrome API (like attaching a handler to the context menu onclick), so we also need an [[https://developer.chrome.com/extensions/event_pages][event page]] (see point 7 on that page, about context menus).
+
+We might be able to use [[https://developer.chrome.com/extensions/activeTab][activeTab permission]] instead of asking for permissions on all pages.
+
+See samples at [[https://developer.chrome.com/extensions/samples][Sample Extensions]].
